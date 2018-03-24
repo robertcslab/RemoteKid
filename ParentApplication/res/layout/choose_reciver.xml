@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtHappinessTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="لطفاً دریافت کننده را انتخاب نمائید"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtHappinessTitle" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btnCanceling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtHappinessTitle"
+        android:layout_below="@android:id/list"
+        android:layout_marginRight="96dp"
+        android:layout_marginTop="41dp"
+        android:text="لغو" />
+
+    <Button
+        android:id="@+id/btnSending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCanceling"
+        android:layout_alignBottom="@+id/btnCanceling"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29dp"
+        android:text="ارسال"
+        android:visibility="invisible" />
+
+</RelativeLayout>

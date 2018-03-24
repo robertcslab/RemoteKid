@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/edtParentMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="درصورت تمایل همراه با پیام متنی ارسال کنید." >
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtHappinessTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/edtParentMessage"
+        android:layout_below="@+id/edtParentMessage"
+        android:layout_marginTop="38dp"
+        android:text="@string/text_of_colorfulVoice_detail"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btn_Happiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="17dp"
+        android:text="انتخاب" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_Happiness"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edtParentMessage"
+        android:layout_toRightOf="@+id/edtParentMessage"
+        android:src="@drawable/images" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/raido" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="21dp"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:text="نام بازی:\n رادیو کودک\nاهداف اصلی:\nتقویت مهارت های \nبین فردی\nاهداف فرعی:\nتقویت اعتماد بنفس"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

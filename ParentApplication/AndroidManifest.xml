@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.parentapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.example.parentapplication.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.parentapplication.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".ParentApp"
+        android:allowBackup="true"
+        android:icon="@drawable/remote_baby"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SendingOptions" >
+        </activity>
+        <activity android:name=".LogIn" >
+        </activity>
+        <activity android:name=".Unlock"></activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:parentActivityName=".LogIn" >
+        </activity>
+        <activity
+            android:name=".Choose_reciver"
+            android:parentActivityName=".SendingOptions" >
+        </activity>
+        <activity
+            android:name=".ParentInbox"
+            android:label="@string/title_activity_parent_inbox"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.example.parentapplication" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AddChildActivity"
+            android:label="@string/title_activity_add_child" >
+        </activity>
+        <activity
+            android:name=".ShowResult"
+            android:label="@string/title_activity_show_result" >
+        </activity>
+    </application>
+
+</manifest>

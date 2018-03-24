@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.parentapplication.ShowResult" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:text="مولفه های هوش هیجانی"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<ScrollView 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="392dp"
+	    android:orientation="vertical" >
+
+<LinearLayout
+    android:id="@+id/layHappy"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignEnd="@+id/layProblemSolving"
+    android:layout_alignRight="@+id/layProblemSolving"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtHappinessTitle"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/Happiness_Title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh1" />
+
+<TextView
+        android:id="@+id/textView1"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Happiness_decleration"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh2" />
+
+    <TextView
+        android:id="@+id/txt_kid_score_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh3" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh3" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/layProblemSolving"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/layHappy"
+    android:layout_alignEnd="@+id/layOptimism"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtPSTitle"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/ProblemSolving_Title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh1" />
+    <TextView
+        android:id="@+id/txtPS_dec"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.98"
+        android:text="@string/ProblemSolving_decleration"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh2" />
+    
+    <TextView
+        android:id="@+id/txt_kid_PSscore_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/swipeRefresh3" />
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh3" />
+    
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/layOptimism"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignEnd="@+id/layProblemSolving"
+    android:layout_alignRight="@+id/layProblemSolving"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtOptimismTitle"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/Optimism_title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh1" />
+
+<TextView
+        android:id="@+id/txt_Optimism_decleration"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Optimism_decleration"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh2" />
+
+    <TextView
+        android:id="@+id/txt_kid_OP_score_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh3" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh3" />
+
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/laySelfRegard"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/layOptimism"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtSelfRegardTitle"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/SelfRegard_title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh1" />
+
+<TextView
+        android:id="@+id/txt_SelfRegard_decleration"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SelfRegard_decleration"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh2" />
+
+    <TextView
+        android:id="@+id/txt_kid_SR_score_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh3" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/swipeRefresh3" />
+
+
+</LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>
