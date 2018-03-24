@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.capablechildren.ColorFullSoundsGame.ColorFullSoundGame" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="صداهای رنگی رنگی"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_yello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_red"
+        android:layout_toLeftOf="@+id/textView1"
+        android:background="@drawable/bgyello" />
+
+    <Button
+        android:id="@+id/btn1_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_gray"
+        android:layout_toRightOf="@+id/btn_yello"
+        android:background="@drawable/bgblue" />
+
+    <Button
+        android:id="@+id/btn_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_purple"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/btn1_blue"
+        android:background="@drawable/bggray" />
+
+    <Button
+        android:id="@+id/btn_purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_yello"
+        android:layout_marginTop="43dp"
+        android:layout_toRightOf="@+id/btn_red"
+        android:background="@drawable/bgpurple" />
+
+    <Button
+        android:id="@+id/btn_pink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_orange"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@+id/btn_red"
+        android:background="@drawable/bgpink" />
+
+       <TextView
+           android:id="@+id/txtView_first_part"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/btn_change_sound"
+           android:layout_alignLeft="@+id/btn1_blue"
+           android:layout_below="@+id/btn1_blue"
+           android:layout_marginTop="39dp"
+           android:layout_toLeftOf="@+id/txtView_second_part"
+           android:background="@layout/round_button"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtView_second_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtView_first_part"
+        android:layout_alignLeft="@+id/btn_red"
+        android:layout_alignRight="@+id/btn_red"
+        android:layout_alignTop="@+id/txtView_first_part"
+        android:background="@layout/round_button"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtView_third_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtView_second_part"
+        android:layout_alignRight="@+id/btn_purple"
+        android:layout_alignTop="@+id/txtView_second_part"
+        android:layout_toRightOf="@+id/btn_red"
+        android:background="@layout/round_button"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btn_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_orange"
+        android:layout_toRightOf="@+id/btn1_blue"
+        android:background="@drawable/bgred" />
+
+    <Button
+        android:id="@+id/btn_orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn1_blue"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/bgorange" />
+
+    <Button
+        android:id="@+id/btn_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_yello"
+        android:layout_below="@+id/btn_yello"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/bggreen" />
+
+    <Button
+        android:id="@+id/btn_playsound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn1_blue"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignTop="@+id/btn_yello"
+        android:layout_toRightOf="@+id/btn_green"
+        android:background="@drawable/play" />
+
+    <Button
+        android:id="@+id/btn_change_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_play_kid_sounds"
+        android:layout_alignRight="@+id/btn_exitapp"
+        android:background="@drawable/next" />
+
+    <Button
+        android:id="@+id/btn_play_kid_sounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_orange"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/play_kid_sound" />
+
+    <Button
+        android:id="@+id/btn_check_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_change_sound"
+        android:layout_alignRight="@+id/btn_playsound"
+        android:layout_below="@+id/txtView_first_part"
+        android:layout_toRightOf="@+id/txtView_first_part"
+        android:background="@drawable/ok" />
+
+    <Chronometer
+        android:id="@+id/chronometer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/btn_yello"
+        android:layout_alignRight="@+id/btn_yello"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_exitapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_red"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toRightOf="@+id/btn_gray"
+        android:background="@drawable/exit" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtView_first_part"
+        android:layout_toLeftOf="@+id/btn_play_kid_sounds"
+        android:src="@drawable/redsign" />
+
+</RelativeLayout>
